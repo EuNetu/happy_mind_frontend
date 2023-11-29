@@ -1,17 +1,38 @@
+/* @font-face { */
+  /* font-family: 'fotnGeral';
+  /* src: url('./assets/font/TheStudentsTeacher-Regular.ttf') format('truetype'); */
+/* } */
+/* @font-face {
+  font-family: 'fotnGeral';
+  src: url('./assets/font/HeyComic.ttf') format('truetype');
+} */
+@font-face {
+  font-family: 'fotnGeral';
+  src: url('./assets/font/LouisGeorgeCafe.ttf') format('truetype');
+}
+/* @font-face {
+  font-family: 'fotnGeral';
+  src: url('./assets/font/Quicksand_Book.otf') format('OpenType');
+} */
 * {
   padding: 0;
   margin: 0;
   font-family: Helvetica;
   box-sizing: border-box;
+  font-family: 'fotnGeral', sans-serif;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
-  color: #f4c525;
+  color: rgb(49, 102, 115);
   margin-bottom: 1em;
-  font-size: 2.1em;
+  font-size: 2.3em;
 }
 
 .bold {
   font-weight: bold;
-  color: #f4c525;
+  color: rgb(64, 126, 142);
 }

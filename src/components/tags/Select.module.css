@@ -1,0 +1,38 @@
+.form_control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form_control label {
+  margin-bottom: 0.6em;
+  font-weight: bold;
+}
+
+.form_control select {
+  padding: 0.7em;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.container_outros {
+  display: flex;
+  align-items: center;
+  
+}
+
+.container_outros  label{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.input_outros {
+  margin: 0.7rem 0 1.5rem 0;
+}
+
+.form_control input {
+  padding: 0.7em;
+  border: 1px solid #777;
+  border-radius: 5px;
+  width: 100%;
+}

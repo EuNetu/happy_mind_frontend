@@ -1,0 +1,56 @@
+.form_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1.8rem;
+}
+
+.form_header h1{
+  margin: 0;
+}
+
+.form_header input{
+  border: 1px solid rgb(49, 102, 115);
+  border-radius: 3px;
+  padding: 0.7rem 0.8rem 0.3rem;
+  margin: 0 0.3rem;
+  color: rgb(49, 102, 115);
+  font-size: 1.8em;
+  transition: 0.4s;
+}
+
+.form_header input:hover{
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: rgb(49, 102, 115);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.form_header a{
+  border: 1px solid rgb(49, 102, 115);
+  border-radius: 3px;
+  padding: 0.7rem 0.8rem 0.3rem;
+  margin: 0 0.3rem;
+  color: rgb(49, 102, 115);
+  font-size: 1.8em;
+  transition: 0.4s;
+}
+
+.form_header a:hover{
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: rgb(49, 102, 115);
+  transition: 0.7s;
+  cursor: pointer;
+}
+/* form:last-child{
+  margin-bottom: 0.5rem;
+} */
+textarea {
+  width: 100%;
+  font-size: 1.3em;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}

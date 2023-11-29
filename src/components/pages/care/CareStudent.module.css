@@ -1,0 +1,137 @@
+.details_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.details_header a{
+  border: 1px solid rgb(49, 102, 115);
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  margin: 0 0.3rem;
+  color: rgb(49, 102, 115);
+}
+
+.details_header a:hover{
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  margin: 0 0.3rem;
+  color: #ffffff;
+  background-color: rgb(49, 102, 115);
+  transition: 0.7s;
+}
+
+.details_links{
+  margin-bottom: 1rem;
+}
+.details_cotainer{
+  display: flex;
+  margin: 1.5rem 0 1rem;
+  border-bottom: 1px solid #ccc;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.details_control{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 1rem 0;
+}
+
+.details_control h1{
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.details_control p{
+  margin: 0.4rem 0.4em 0 0.5rem;
+  font-size: 1.8em;
+}
+
+.details_cotainer .details_control h1{
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.details_cotainer .details_control p{
+  font-size: 1.5em;
+}
+
+.container_records{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.records_links{
+  margin: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.records_links a{
+  border: 1px solid rgb(49, 102, 115);
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  color: rgb(49, 102, 115);
+}
+
+.records_links a:hover{
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  color: #ffffff;
+  background-color: rgb(49, 102, 115);
+  transition: 0.7s;
+}
+
+.row {
+  width: 32%;
+}
+
+.article_wrapper {
+  transition: width 0.4s;
+}
+
+article {
+  height: 150px;
+  margin-bottom: 30px;
+  background-color: rgb(49, 102, 115);
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  gap: 8px;
+  overflow: auto;
+}
+
+.article_wrapper article {
+  transition: width 0.4s;
+}
+
+article h2 {
+  font-size: 24px;
+  color: #ffffff;
+  transition: all 0.4s;
+  margin: 0px;
+}
+
+article p {
+  color: #ffffff;
+}
+
+.without_records{
+  text-align: center;
+  font-size: 1.9em;
+}
+

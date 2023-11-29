@@ -1,0 +1,157 @@
+a{
+  text-decoration: none;
+}
+.students_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.students_header h1 {
+  margin: 0;
+}
+
+.students_header a {
+  text-decoration: none;
+  background-color: #fff;
+  color: rgb(64, 126, 142);
+  font-weight: bold;
+  transition: 0.5s;
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  border: 2px solid rgb(64, 126, 142);
+}
+
+.students_header a:hover {
+  background-color: rgb(64, 126, 142);
+  color: #fff;
+}
+
+.students_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.students_filter {
+  display: flex;
+  align-items: center;
+  margin: 3.5rem 10rem 4rem 10rem;
+
+}
+
+.students_filter input{
+  padding: 0.7em;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-size: 1.05em;
+  background-color: rgb(64, 126, 142);
+  color: #fff;
+  cursor: pointer;
+}
+
+.students_filter input[type='text']{
+  padding: 0.7em;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-size: 1.05em;
+  width: 100%;
+  margin-right: 0.3rem;
+  background-color: #fff;
+  color: #000;
+}
+
+.students_filter input::placeholder {
+  color: #565454;
+}
+
+.row {
+  width: 32%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+.article_wrapper {
+  transition: width 0.4s;
+}
+
+article {
+  height: 150px;
+  margin-bottom: 30px;
+  background-color: rgb(49, 102, 115);
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  gap: 8px;
+  overflow: auto;
+}
+
+.article_wrapper article {
+  transition: width 0.4s;
+}
+
+article h1 {
+  font-size: 20px;
+  color: #ffffff;
+  transition: all 0.4s;
+  margin: 0px;
+}
+
+article p {
+  color: #ffffff;
+}
+
+article a {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 150px;
+  text-align: center;
+  width: 100%;
+  background-color: #FFF;
+  font-size: 48px;
+  font-style: italic;
+  opacity: 0;
+  color: #ffffff !important;
+  transition: all 0.4s;
+  text-decoration: none !important;
+  border-radius: 150px;
+  font-family: "Pacifico";
+  text-shadow: 0 1px 1px #ffffff;
+}
+
+.bloc article {
+  padding: 10px;
+  height: calc(150px * 1.5);
+  border-radius: 3px;
+  margin-top: calc(150px / 2);
+}
+
+.bloc article h1 {
+  font-size: 14px;
+  height: calc(150px / 4);
+  line-height: calc(150px / 4);
+}
+
+.bloc article p {
+  font-size: 12px;
+}
+
+.bloc article a {
+  border-radius: 3px;
+  line-height: calc(150px * 1.5 + 30px);
+}
+
+small {
+  color: #fff;
+}

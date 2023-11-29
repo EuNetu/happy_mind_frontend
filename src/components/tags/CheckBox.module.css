@@ -1,0 +1,55 @@
+.form_control {
+  display: flex;
+  flex-direction: row;
+  margin: 0.8em 0;
+}
+
+.form_control label {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.form_control input {
+  padding: 0.7em;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-size: 1.05em;
+  margin: 0 0 0 0.5rem;
+}
+
+.form_control input::placeholder {
+  color: #565454;
+}
+
+.form_phone{
+  display: flex;
+  flex-direction: row;
+}
+
+.form_control_phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+}
+
+.form_control_phone label {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.form_control_phone input {
+  padding: 0.7em;
+  border: 1px solid #777;
+  border-radius: 5px;
+  width: 17vw;
+}
+
+.form_control_phone input::placeholder {
+  color: #565454;
+}
+
+.first_input input{
+  width: 4vw;
+  margin: 0 1em 0 0;
+}

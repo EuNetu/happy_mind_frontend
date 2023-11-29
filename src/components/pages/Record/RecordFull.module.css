@@ -1,0 +1,68 @@
+.full_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.full_header a{
+  border: 1px solid rgb(49, 102, 115);
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  margin: 0 0.3rem;
+  color: rgb(49, 102, 115);
+}
+
+.full_header a:hover{
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  margin: 0 0.3rem;
+  color: #ffffff;
+  background-color: rgb(49, 102, 115);
+  transition: 0.7s;
+}
+
+.full_header_control{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.full_header_control h1{
+  margin: 0;
+}
+.full_header_control p{
+  font-size: 1.5em;
+  margin: 0.4rem 0.4rem 0;
+}
+
+.full_links{
+  margin-bottom: 1rem;
+}
+.full_cotainer{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.full_controle{
+  margin-bottom: 2rem;
+}
+
+.full_controle h2, h4{
+  color: #000;
+}
+
+.full_controle article {
+  height: 150px;
+  margin-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.full_cotainer:last-child{
+  margin-bottom: 3rem;
+}

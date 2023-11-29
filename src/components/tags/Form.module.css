@@ -1,0 +1,36 @@
+.form_container {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.form_container h1{
+  margin-bottom: 0.3em;
+}
+
+.form_container input[type='submit'] {
+  border-radius: 8px;
+  background-color: #1c9a48;
+  color: #fff;
+  border: none;
+  min-width: 100px;
+  min-height: 2.5rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.form_container input[type='submit']:hover {
+  background-color: #1a793b;
+}
+
+.form_container p {
+  margin-top: 0.5em;
+}
+
+.form_container p a {
+  color: rgb(64, 126, 142);
+  font-weight: bold;
+}
