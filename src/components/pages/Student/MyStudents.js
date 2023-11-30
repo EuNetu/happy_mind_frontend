@@ -64,7 +64,10 @@ function MyStudents() {
     <section>
       <div className={styles.students_header}>
         <h1>Estudantes</h1>
-        <Link to="/student/create">Cadastrar Estudante</Link>
+        <div>
+          <Link to="/student/create">Cadastrar Estudante</Link>
+          <Link to="/student/statistics">Estatísticas</Link>
+        </div>
       </div>
       <div className={styles.students_filter}>
           <input

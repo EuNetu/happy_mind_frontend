@@ -78,7 +78,7 @@ function DetailsRecords() {
         </div>
 
         <CheckBox
-            text="multidisciplinar"
+            text="Multidisciplinar"
             type="checkbox"
             name="multidisciplinary"
             checked={record.multidisciplinary}

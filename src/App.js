@@ -26,6 +26,7 @@ import DetailsGroupRecords from './components/pages/Group/DetailsGroupRecords'
 import ResponsibleRecords from './components/pages/Responsible/ResponsibleRecords'
 import RegisterResponsibleRecords from './components/pages/Responsible/RegisterResponsibleRecords'
 import DetailsResponsibleRecords from './components/pages/Responsible/DetailsResponsibleRecords'
+import StudentsStatistics from './components/pages/Student/StudentsStatistics'
 
 import { UserProvider } from './context/UserContext'
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path="/student/all" element={<MyStudents />}/>
             <Route path="/student/create" element={<RegisterStudents />}/>
             <Route path="/student/treatment/:id" element={<CareStudent />}/>
+            <Route path="/student/statistics" element={<StudentsStatistics />}/>
             <Route path="/record/create/:id" element={<RegisterRecords />}/>
             <Route path="/edit/treatment/:id" element={<DetailsRecords />}/>
             <Route path="/student/:id" element={<EditStudents />}/>

@@ -73,7 +73,7 @@ function CareStudent() {
         <div className={styles.details_control}>
           <h1>Gênero: </h1>
           <p>{student.gender}</p>
-          <h1>idade: </h1>
+          <h1>Idade: </h1>
           <p>{idade(student.birth)} anos</p>
         </div>
         <div className={styles.details_control}>
@@ -89,7 +89,7 @@ function CareStudent() {
           <p>{student.matriculation}</p>
         </div >
         <div className={styles.details_control}>
-          <h1>curso: </h1>
+          <h1>Curso: </h1>
           <p>{student.course}</p>
         </div>
         <div className={styles.details_control}>
@@ -130,7 +130,7 @@ function CareStudent() {
                   <div>
                     <h3></h3>
                     <h2>Data de registro: {dataAtualFormatada(record.createdAt)}</h2>
-                    <h2>Multidisciplinar: {record.multidisciplinary == true ? "Sim" : "Não"}</h2>
+                    <h2>{record.multidisciplinary == true ? "Multidisciplinar" : "Individual"}</h2>
                     <h2>Encaminhamento(s): {record.forwarding ? record.forwarding : "Nenhum"}</h2>
                   </div>
                 </article>

@@ -85,7 +85,7 @@ function DetailsRegisterTeacherRecords() {
           handleOnChange={handleChange}
         />
         <CheckBox
-            text="multidisciplinar"
+            text="Multidisciplinar"
             type="checkbox"
             name="multidisciplinary"
             checked={record.multidisciplinary}

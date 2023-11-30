@@ -21,6 +21,7 @@ a{
   padding: 0.5em 0.8em;
   border-radius: 5px;
   border: 2px solid rgb(64, 126, 142);
+  margin-left: 0.5rem;
 }
 
 .students_header a:hover {
@@ -69,8 +70,6 @@ a{
 .row {
   width: 32%;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 .article_wrapper {
   transition: width 0.4s;
@@ -126,7 +125,6 @@ article a {
   transition: all 0.4s;
   text-decoration: none !important;
   border-radius: 150px;
-  font-family: "Pacifico";
   text-shadow: 0 1px 1px #ffffff;
 }
 

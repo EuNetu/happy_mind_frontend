@@ -79,7 +79,7 @@ const primeiroNome = (nome) => nome ? nome.split(' ')[0] : ""
                     <h1>{record.responsible}</h1>
                     <small>{dataAtualFormatada(record.createdAt)}</small>
                   </div>
-                  <p>Multidisciplinar: {record.multidisciplinary == true ? "Sim" : "Não"}</p>
+                  <p>{record.multidisciplinary == true ? "Multidisciplinar" : "Individual"}</p>
                   <p>Encaminhamento(s): {record.forwarding ? record.forwarding: "Nenhum"}</p>
                 </article>
               </div>

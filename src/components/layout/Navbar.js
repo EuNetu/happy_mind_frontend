@@ -27,10 +27,10 @@ function Navbar() {
                 <Link to="/student/all">Meus Estudantes</Link>
               </li>
               <li>
-                <Link to="/teacher/all">Atdms. Professores</Link>
+                <Link to="/teacher/all">Atend. Professores</Link>
               </li>
               <li>
-                <Link to="/group/all">Atdms. Grupos</Link>
+                <Link to="/group/all">Atend. Grupos</Link>
               </li>
               <li>
                 <Link to="/user/profile">Meu Perfil</Link>

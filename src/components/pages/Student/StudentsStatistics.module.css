@@ -1,0 +1,40 @@
+a{
+  text-decoration: none;
+}
+.students_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.students_header h1 {
+  margin: 0;
+}
+
+.students_header a {
+  text-decoration: none;
+  background-color: #fff;
+  color: rgb(64, 126, 142);
+  font-weight: bold;
+  transition: 0.5s;
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  border: 2px solid rgb(64, 126, 142);
+  margin-left: 0.5rem;
+}
+
+.students_header a:hover {
+  background-color: rgb(64, 126, 142);
+  color: #fff;
+}
+
+.statistic_container{
+  margin: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3%;
+}
+
+.statistic_container h2{
+  margin: 0 0 1rem 0;
+}

@@ -65,7 +65,7 @@ function RegisterRecords() {
         </div>
 
         <CheckBox
-            text="multidisciplinar"
+            text="Multidisciplinar"
             type="checkbox"
             name="multidisciplinary"
             handleOnChange={handleCheck}

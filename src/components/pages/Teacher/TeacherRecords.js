@@ -76,7 +76,7 @@ function TeacherRecords() {
                     <h1>{record.teacher}</h1>
                     <small>{dataAtualFormatada(record.createdAt)}</small>
                   </div>
-                  <p>Multidisciplinar: {record.multidisciplinary == true ? "Sim" : "Não"}</p>
+                  <p>{record.multidisciplinary == true ? "Multidisciplinar" : "Individual"}</p>
                   <p>Encaminhamento(s): {record.forwarding ? record.forwarding: "Nenhum"}</p>
                 </article>
               </div>

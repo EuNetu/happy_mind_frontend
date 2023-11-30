@@ -71,7 +71,7 @@ function RegisterGroupRecords() {
           handleOnChange={handleChange}
         />
         <CheckBox
-            text="multidisciplinar"
+            text="Multidisciplinar"
             type="checkbox"
             name="multidisciplinary"
             handleOnChange={handleCheck}
