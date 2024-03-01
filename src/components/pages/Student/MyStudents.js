@@ -2,6 +2,10 @@ import api from '../../../utils/api'
 
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import Input from '../../tags/Input'
+import Select from '../../tags/Select'
+import CheckBox from '../../tags/CheckBox'
+import Modal, { ModalHeader, ModalBody, ModalFooter, useModal } from '../../tags/ModalFiltro';
 
 import styles from './MyStudents.module.css'
 
@@ -9,6 +13,7 @@ function MyStudents() {
   const [students, setStudents] = useState([])
   const [filter, setfilter] = useState({})
   const [token] = useState(localStorage.getItem('token') || '')
+  const { isShowing, toggle } = useModal();
 
   useEffect(() => {
     api
@@ -44,20 +49,26 @@ function MyStudents() {
 
   function getWithFilter() {
     api
-    .post('/student/filter', filter, {
-      headers: {
-        Authorization: `Bearer ${JSON.parse(token)}`,
-      },
-    })
-    .then((response) => {
-      setStudents(response.data.students)
-    })
+      .post('/student/filter', filter, {
+        headers: {
+          Authorization: `Bearer ${JSON.parse(token)}`,
+        },
+      })
+      .then((response) => {
+        setStudents(response.data.students)
+      })
   }
 
   function handleChangeFilter(e) {
     setfilter({ ...filter, [e.target.name]: e.target.value })
-    
+  }
 
+  function handleCheck(e) {
+    const { name, checked } = e.target;
+    setfilter({
+      ...filter,
+      [name]: checked,
+    });
   }
 
   return (
@@ -70,14 +81,65 @@ function MyStudents() {
         </div>
       </div>
       <div className={styles.students_filter}>
-          <input
-            text="Pesquise por um aluno"
-            type="text"
-            name="filterNome"
-            placeholder="Digite o nome do aluno"
-            onChange={handleChangeFilter}
-          />
+        <input
+          text="Pesquise por um aluno"
+          type="text"
+          name="filterNome"
+          placeholder="Digite o nome do aluno"
+          onChange={handleChangeFilter}
+        />
+        <div>
+          <input type="submit" onClick={toggle} class="btn" value="Filtro Avançado" />
           <input type="submit" onClick={getWithFilter} class="btn" value="Buscar" />
+
+          <Modal isShowing={isShowing} toggle={toggle}>
+            <ModalHeader toggle={toggle}>Filtro Avançado</ModalHeader>
+            <ModalBody>
+              <div className={styles.check_modal_filter}>
+                <CheckBox
+                  text="Masculino"
+                  type="checkbox"
+                  name="filterMasculino"
+                  checked={filter.filterMasculino}
+                  handleOnChange={handleCheck}
+                />
+                <CheckBox
+                  text="Feminino"
+                  type="checkbox"
+                  name="filterFeminino"
+                  checked={filter.filterFeminino}
+                  handleOnChange={handleCheck}
+                />
+              </div>
+              <div className={styles.check_modal_filter}>
+                <CheckBox
+                  text="Aluno Residente"
+                  type="checkbox"
+                  name="filterResidentStudent"
+                  checked={filter.filterResidentStudent}
+                  handleOnChange={handleCheck}
+                />
+                <CheckBox
+                  text="Recebe Auxílio"
+                  type="checkbox"
+                  name="filterIsColleger"
+                  checked={filter.filterIsColleger}
+                  handleOnChange={handleCheck}
+                />
+              </div>
+              <Select
+                text="Nível de escolaridade"
+                name="filterLevelEducation"
+                options={["Técnico Integrado", "Técnico Subsequente", "Graduação", "Pós-Graduação"]}
+                value={filter.filterLevelEducation}
+                handleOnChange={handleChangeFilter}
+              />
+            </ModalBody>
+            <ModalFooter>
+              <button onClick={toggle}>Fechar Modal</button>
+            </ModalFooter>
+          </Modal>
+        </div>
       </div>
       <div className={styles.students_container}>
         {students.length > 0 &&

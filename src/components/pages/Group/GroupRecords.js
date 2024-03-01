@@ -54,7 +54,7 @@ function GroupRecords() {
     <section>
       <div className={styles.students_header}>
         <h1>Atendimentos Com Grupos</h1>
-        <Link to="/group/create">Cadastrar Acompanhamento</Link>
+        <Link to="/group/create">Cadastrar Atendimento</Link>
       </div>
       <div className={styles.students_filter}>
           <input
@@ -82,7 +82,7 @@ function GroupRecords() {
               </div>
             </Link>
           ))}
-        {records.length == 0 && <p>Ainda não há acompanhamentos cadastrados!</p>}
+        {records.length == 0 && <p>Ainda não há atendimentos cadastrados!</p>}
       </div>
     </section>
   )

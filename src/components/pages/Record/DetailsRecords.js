@@ -84,7 +84,7 @@ function DetailsRecords() {
             checked={record.multidisciplinary}
             handleOnChange={handleCheck}
           />
-          <label>Relato do atendimento:</label>
+          <label>Relato do acolhimento:</label>
           <textarea value={record.note || ""} onChange={handleChange} id="note" name="note" rows="8" />
         <Input
           text="Encaminhamento(s)"

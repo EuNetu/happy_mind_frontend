@@ -11,7 +11,7 @@ function Home() {
       <div className={styles.home_container}>
         <div className={styles.button_container}>
             <Link to="/login" className={styles.home_button}>Login</Link>
-            <Link to="/register" className={styles.home_button}>Registro</Link>
+            <Link to="/register" className={styles.home_button}>Registrar-se</Link>
         </div>
       </div>
     </section>

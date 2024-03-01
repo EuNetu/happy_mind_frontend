@@ -88,16 +88,9 @@ function Profile() {
           valueDDD={user.code_area || ''}
         />
         <Input
-          text="Senha"
-          type="password"
-          name="password"
-          placeholder="Digite a sua senha"
-          handleOnChange={handleChange}
-        />
-        <Input
           text="Confirmação de senha"
           type="password"
-          name="confirmpassword"
+          name="password"
           placeholder="Confirme a sua senha"
           handleOnChange={handleChange}
         />

@@ -70,7 +70,7 @@ function DetailsGroupRecords() {
 
       <form onSubmit={update}>
         <div className={styles.form_header}>
-          <h1>Acolhimento</h1>
+          <h1>Atendimento</h1>
           <div>
             <input type="submit" value="Atualizar" />
             <Link to={`/group/all`}>Sair sem salvar</Link>

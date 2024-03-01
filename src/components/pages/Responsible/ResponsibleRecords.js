@@ -56,8 +56,8 @@ const primeiroNome = (nome) => nome ? nome.split(' ')[0] : ""
   return (
     <section>
       <div className={styles.students_header}>
-        <h1>Atendimentos com os resposáveis do(a) <h3>{primeiroNome(student.name)}</h3></h1>
-        <Link to={`/responsible/create/${id}`}>Cadastrar Acompanhamento Com o Responsável</Link>
+        <h1>Atendimentos com os responsáveis do(a) <h3>{primeiroNome(student.name)}</h3></h1>
+        <Link to={`/responsible/create/${id}`}>Cadastrar Atendimento Com o Responsável</Link>
       </div>
       {/* <div className={styles.students_filter}>
           <input
@@ -85,7 +85,7 @@ const primeiroNome = (nome) => nome ? nome.split(' ')[0] : ""
               </div>
             </Link>
           ))}
-        {records.length == 0 && <p>Ainda não há acompanhamentos cadastrados!</p>}
+        {records.length == 0 && <p>Ainda não há atendimentos cadastrados!</p>}
       </div>
     </section>
   )

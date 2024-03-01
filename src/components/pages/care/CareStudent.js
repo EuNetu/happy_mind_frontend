@@ -66,7 +66,7 @@ function CareStudent() {
         </div>
         <div className={styles.details_links}>
           <Link to={`/student/${id}`}>Editar Ficha</Link>
-          <Link to={`/responsible/treatment/${id}`}>Acompanhamento com os responsáveis</Link>
+          <Link to={`/responsible/treatment/${id}`}>atendimento com os responsáveis</Link>
         </div>
       </div>
       <div className={styles.details_cotainer}>
@@ -119,7 +119,7 @@ function CareStudent() {
       </div>
       <div className={styles.students_container}>
         <div className={styles.records_links}>
-          <Link to={`/record/create/${id}`}>Cadastrar um novo acompanhamento</Link>
+          <Link to={`/record/create/${id}`}>Cadastrar um novo acolhimento</Link>
           <Link to={`/student/${id}/full`}>Visualização para impressão</Link>
         </div>
         {records.length > 0 &&

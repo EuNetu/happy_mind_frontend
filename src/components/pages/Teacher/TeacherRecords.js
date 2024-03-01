@@ -54,7 +54,7 @@ function TeacherRecords() {
     <section>
       <div className={styles.students_header}>
         <h1>Atendimentos Com Professores</h1>
-        <Link to="/teacher/create">Cadastrar Acompanhamento</Link>
+        <Link to="/teacher/create">Cadastrar atendimento</Link>
       </div>
       <div className={styles.students_filter}>
           <input
@@ -82,7 +82,7 @@ function TeacherRecords() {
               </div>
             </Link>
           ))}
-        {records.length == 0 && <p>Ainda não há acompanhamentos cadastrados!</p>}
+        {records.length == 0 && <p>Ainda não há atendimentos cadastrados!</p>}
       </div>
     </section>
   )

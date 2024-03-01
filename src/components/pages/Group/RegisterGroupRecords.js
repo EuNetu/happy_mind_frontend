@@ -60,14 +60,14 @@ function RegisterGroupRecords() {
 
       <form onSubmit={create}>
         <div className={styles.form_header}>
-          <h1>Cadastrar um acolhimento</h1>
+          <h1>Cadastrar um atendimento</h1>
           <input type="submit" value="Cadastrar" />
         </div>
         <Input
           text="Razão"
           type="text"
           name="reason"
-          placeholder="Digite a razão do acolhimento"
+          placeholder="Digite a razão do atendimento"
           handleOnChange={handleChange}
         />
         <CheckBox
